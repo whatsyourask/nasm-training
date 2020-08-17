@@ -8,7 +8,21 @@ section .text
 
 global _start
 
+; ______________rax_______________
+;                 _______eax______
+;                         ___ax___
+;  _ _ _ _ _ _ _ _ _ _ _ _ _ah _al
+; |_ _ _ _ _ _ _ _|_ _ _ _|_ _|_ _|
+
 _start:
   xor rax, rax
   mov al, [rel byte_data]          ; rel - means replace the absolute address to the relative
-  xor rdx, rdx                      ;
+
+  xor rdx, rdx
+  mov dx, [rel word_data]
+
+  xor rcx, rcx
+  mov ecx, [rel dword_data]
+
+  xor rbx, rbx
+  mov rbx, [rel qword_data]
