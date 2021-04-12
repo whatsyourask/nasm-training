@@ -1,5 +1,7 @@
-# train-nasm
-Repo where i store a nasm programs.
+# nasm-practice
+
+NASM programs that I wrote while practicing NASM.
+
 ## Useful resources
 [System call numbers](https://github.com/torvalds/linux/blob/v3.13/arch/x86/syscalls/syscall_64.tbl#L69)
 
